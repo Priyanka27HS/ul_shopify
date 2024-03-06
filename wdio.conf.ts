@@ -1,5 +1,6 @@
 import type { Options } from '@wdio/types'
 import { join } from 'path'
+import * as fs from 'fs';
 
 export const config: Options.Testrunner = {
     //
@@ -142,7 +143,14 @@ export const config: Options.Testrunner = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    // reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+        disableMochaHooks: true
+    }]],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -150,7 +158,15 @@ export const config: Options.Testrunner = {
         ui: 'bdd',
         timeout: 60000
     },
-
+    // @ts-ignore: noUnusedParameters
+    afterTest: async function (test, context, { error, result, duration, passed, retries }) {
+        if (!fs.existsSync("./errorShots")) {
+          fs.mkdirSync("./errorShots");
+        }
+        if (!passed) {
+          await driver.saveScreenshot(`./errorShots/${test.title.replaceAll(" ", "_")}.png`);
+        }
+      },
     //
     // =====
     // Hooks
