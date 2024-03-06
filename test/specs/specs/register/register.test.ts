@@ -3,7 +3,7 @@ import { HomeScreen } from "../../../screens/homeScreen";
 import { registerDetails } from "../../../resources/customTypes/registerDetails";
 import * as credentials from "../../../resources/testdata/credentials.json";
 import { LoggerHelper } from "../../../../customLogger/loggerHelper";
-import { RegisterUtil } from "../../../utilities/registerUtil";
+import { RegisterUtil } from "../../../commonFunctions/registerUtil";
 
 let homeScreen: HomeScreen;
 let registerUtil: RegisterUtil;
