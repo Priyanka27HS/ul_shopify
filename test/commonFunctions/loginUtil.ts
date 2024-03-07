@@ -2,7 +2,7 @@ import { BaseScreen } from "../screens/base/baseScreen"
 import { LoginScreen } from "../screens/loginScreen";
 import { HomeScreen } from "../screens/homeScreen";
 import { ProfileScreen } from "../screens/profileScreen";
-import { LOGGER } from "../../customLogger/loggerHelper";
+import { LOGGER } from "../utilities/reporting/loggerHelper";
 import { OtpScreen } from "../screens/otpScreen";
 
 const loginScreen = new LoginScreen;

@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { HomeScreen } from "../../../screens/homeScreen";
 import { registerDetails } from "../../../resources/customTypes/registerDetails";
 import * as credentials from "../../../resources/testdata/credentials.json";
-import { LoggerHelper } from "../../../../customLogger/loggerHelper";
+import { LoggerHelper } from "../../../utilities/reporting/loggerHelper";
 import { RegisterUtil } from "../../../commonFunctions/registerUtil";
 
 let homeScreen: HomeScreen;
