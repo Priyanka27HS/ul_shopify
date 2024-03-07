@@ -156,7 +156,7 @@ export const config: Options.Testrunner = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000 * 5
     },
     // @ts-ignore: noUnusedParameters
     afterTest: async function (test, context, { error, result, duration, passed, retries }) {

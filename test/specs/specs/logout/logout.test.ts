@@ -3,7 +3,7 @@ import { HomeScreen } from "../../../screens/homeScreen";
 import { ProfileScreen } from "../../../screens/profileScreen";
 import { loginDetails } from "../../../resources/customTypes/loginDetails";
 import * as credentials from "../../../resources/testdata/credentials.json";
-import { LoggerHelper } from "../../../../customLogger/loggerHelper";
+import { LoggerHelper } from "../../../utilities/reporting/loggerHelper";
 import { LoginUtil } from "../../../commonFunctions/loginUtil";
 
 let homeScreen : HomeScreen;
