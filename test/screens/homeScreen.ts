@@ -14,6 +14,9 @@ export class HomeScreen extends BaseScreen {
         userName: '#txt-username',
         closePopUpIcon: "#btn-modal-cross",
 
+        productsSectionText: '#New Arrivals',
+        goIntoProductsSection: '(//android.view.ViewGroup[@resource-id="com.ultralesson.ulshopify:id/icon-next"])[1]',
+        
     }
 
     public async navigateToProfile(){
@@ -38,4 +41,13 @@ export class HomeScreen extends BaseScreen {
         return this.getText(this.selectors.userName);
     }
 
+    public async getNewArrivalsText() {
+        const isHeaderTextDisplayed = await this.isDisplayed(this.selectors.productsSectionText);
+        return isHeaderTextDisplayed;
+    }
+
+    public async getIntoProductsSection() {
+        await this.click(this.selectors.goIntoProductsSection);
+    }
+    
 }
