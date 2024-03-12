@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://www.apicademy.dev/",
+    "signupUrl": "https://apicademy.as.r.appspot.com/api/auth/signup",
+    "loginUrl": "https://apicademy.as.r.appspot.com/api/auth/login"
+}
