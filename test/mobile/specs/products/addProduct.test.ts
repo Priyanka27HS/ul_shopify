@@ -1,10 +1,10 @@
 import { expect } from "chai";
-import { HomeScreen } from "../../../screens/homeScreen";
-import { loginDetails } from "../../../resources/customTypes/loginDetails";
-import * as credentials from "../../../resources/testdata/credentials.json";
+import { HomeScreen } from "../../screens/homeScreen";
+import { loginDetails } from "../../resources/customTypes/loginDetails";
+import * as credentials from "../../resources/testdata/credentials.json";
 import { LoggerHelper } from "../../../utilities/reporting/loggerHelper";
-import { LoginUtil } from "../../../commonFunctions/loginUtil";
-import { ProductUtil } from "../../../commonFunctions/products/productUtil";
+import { LoginUtil } from "../../commonFunctions/loginUtil";
+import { ProductUtil } from "../../commonFunctions/products/productUtil";
 
 let homeScreen: HomeScreen;
 let loginUtil: LoginUtil;

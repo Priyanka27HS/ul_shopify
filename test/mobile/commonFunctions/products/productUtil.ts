@@ -1,8 +1,8 @@
 import { BaseScreen } from "../../screens/base/baseScreen";
 import { HomeScreen } from "../../screens/homeScreen";
-import { LOGGER } from "../../utilities/reporting/loggerHelper";
+import { LOGGER } from "../../../utilities/reporting/loggerHelper";
 import { ExploreMoreScreen } from "../../screens/products/exploreMoreScreen";
-import { SwipeUtil } from "../../utilities/actions/swipeUtil";
+import { SwipeUtil } from "../../../utilities/actions/swipeUtil";
 
 const homeScreen = new HomeScreen;
 const exploreMoreScreen = new ExploreMoreScreen;
