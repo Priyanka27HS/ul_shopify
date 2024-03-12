@@ -34,7 +34,8 @@ export const config: Options.Testrunner = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.ts'
+        // './test/specs/**/*.ts'
+        './test/mobile/specs/**/*.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -65,7 +66,7 @@ export const config: Options.Testrunner = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
             "appium:platformName": "Android",
-            "appium:deviceName": "Pixel 6 Pro API 32",
+            "appium:deviceName": "Pixel 6 API 32",
             "appium:app": join(process.cwd(), '/app/ul-shopify.apk'),
             "appium:autoGrantPermissions": true,
             "appium:automationName": "UiAutomator2",

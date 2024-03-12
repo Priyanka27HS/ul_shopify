@@ -1,5 +1,5 @@
-import { LOGGER } from "../../utilities/reporting/loggerHelper";
-import { SwipeUtil } from "../../utilities/actions/swipeUtil";
+import { LOGGER } from "../../../utilities/reporting/loggerHelper";
+import { SwipeUtil } from "../../../utilities/actions/swipeUtil";
 
 export class BaseScreen {
 

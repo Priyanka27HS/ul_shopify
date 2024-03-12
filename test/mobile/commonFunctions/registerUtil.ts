@@ -2,7 +2,7 @@ import { BaseScreen } from "../screens/base/baseScreen"
 import { LoginScreen } from "../screens/loginScreen";
 import { HomeScreen } from "../screens/homeScreen";
 import { ProfileScreen } from "../screens/profileScreen";
-import { LOGGER } from "../utilities/reporting/loggerHelper";
+import { LOGGER } from "../../utilities/reporting/loggerHelper";
 import { OtpScreen } from "../screens/otpScreen";
 import { RegisterScreen } from "../screens/registerScreen";
 import { registerDetails } from "../resources/customTypes/registerDetails";
