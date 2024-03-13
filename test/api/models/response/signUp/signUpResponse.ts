@@ -1,4 +1,5 @@
 export interface SignUpResponse {
+    user: any
     status: number
     data: Data
   }
