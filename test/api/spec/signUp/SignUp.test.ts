@@ -24,7 +24,7 @@ describe('Sign up user - POST Request', () => {
         try {
             const response: SignUpResponse = await authService.signup(request);
             console.log('Response :', response);
-
+            
             expect(response.status).to.equal(201);
             expect(response.data.user.email).to.equal(request.email);
         } catch (error: any) {

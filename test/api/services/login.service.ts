@@ -7,7 +7,6 @@ export class LoginService extends BaseService {
     
     async login(request: SignUpRequest): Promise<LoginResponse> {
         
-        // const url = apiUrls.endpoints.login;
         const url:string = `${this.getBaseUrl()}/api/auth/login`;
 
         try {
